@@ -1,11 +1,128 @@
 body {/*making the body fade in*/
+    text-align: center;
     opacity: 1;
     transition: 10s opacity;
+    font-family: Arial, Helvetica, sans-serif;
 }
 body.fade-out {
     opacity: 0;
     transition: none;
 }
+*   {
+    box-sizing: border-box;
+}
 html {
     background-color: aquamarine;
+}
+.container {
+    margin: auto;
+    border: 1px solid rgba(21, 236, 128, 0.89);
+    border-radius: 5px;
+    width:500px;
+    height: 600px;
+    background-image: url(./images/dragon2.png);
+}
+input {
+    padding: 10px 20px;
+    margin: 15px;
+    box-sizing: border-box;
+    width: 200px;
+    background-color: rgba(221, 172, 233, 0.753);
+}
+input:focus {
+    background-color: mediumaquamarine;
+}
+input[type=submit] {
+    background-color: rgba(221, 172, 233, 0.753);
+}
+input[type=submit]:hover {
+    background-color:  mediumaquamarine;
+}
+form {
+    text-align: left;
+}
+
+textarea {
+    padding: 10px 20px;
+    margin: 15px;
+    background-color: rgba(221, 172, 233, 0.753);
+}
+textarea:focus {
+    background-color: mediumaquamarine;
+}
+
+
+
+
+
+
+
+
+
+
+.open-button {
+  background-color:rgba(221, 172, 233, 0.753);
+  color: white;
+  padding: 16px 20px;
+  border: 1px solid rgba(21, 236, 128, 0.89);
+  border-radius: 5px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 1px solid rgba(21, 236, 128, 0.89);
+  z-index: 9;
+}
+
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color:  mediumaquamarine;
+}
+
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: rgba(221, 172, 233, 0.753);
+}
+
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: rgba(221, 172, 233, 0.753);
+  outline: none;
+}
+
+
+.form-container .btn {
+  background-color: #4CAF50;
+  color: black;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+
+.form-container .cancel {
+  background-color: red;
+}
+
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
 }

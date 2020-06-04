@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="./Js/R4js.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="R4css.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,56 @@
 </head>
 <body>
     <h1 style="font-size: 3vw;">Hi there, this is responsive</h1>
+    <div class="container">
+        <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        <div>
+          
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        </div>
+        <div>
+          
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        </div>
+        <div>
+          
+          <input type="email" id="email" name="email" placeholder="Your email..">
+        </div>
+        <div>
+            
+            <input type="tel" id="Phone" name="Phonenumber" placeholder="Your Phone Number..">
+        </div>
+        <div>
+          
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          <input type="submit" value="Submit">
+        </div>
+
+        </form>
+      </div>
+
+
+
+
+
+
+      <button class="open-button" onclick="openForm()">Open Form</button>
+
+      <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h1>Login</h1>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <button type="submit" class="btn">Login</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+
+
     <!--making the body fade in-->
     <script>
         document.body.className +=' fade-out';
