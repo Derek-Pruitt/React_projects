@@ -118,7 +118,7 @@ textarea:focus {
   display: none;
   position: fixed;
   bottom: 0;
-  right: 15px;
+  right: 50px;
   border: 1px solid rgba(21, 236, 128, 0.89);
   z-index: 9;
 }
@@ -214,4 +214,24 @@ img {vertical-align: middle;}
     margin: auto;
     width: 75%;
     background-color: rgb(73, 123, 163);
+}
+/*sticky button*/
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 50px;
+  font-size: 20px;
+}
+.button {
+  background-color: rgba(221, 172, 233, 0.753);
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
