@@ -2,10 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="R4css.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+   
 </head>
 <body>
+    <h1 style="font-size: 3vw;">Hi there, this is responsive</h1>
+    <!--making the body fade in-->
+    <script>
+        document.body.className +=' fade-out';
+
+        $(function() {
+            $('body').removeClass('fade-out');
+        });
+    </script>
     
 </body>
 </html>
