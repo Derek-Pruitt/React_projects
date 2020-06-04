@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {/*making the body fade in*/
     text-align: center;
     opacity: 1;
@@ -14,7 +18,7 @@ body.fade-out {
 html {
     background-color: aquamarine;
 }
-.container {
+#subform {
     margin: auto;
     border: 1px solid rgba(21, 236, 128, 0.89);
     border-radius: 5px;
@@ -69,7 +73,24 @@ textarea:focus {
   100% {left: 100px;}
 }
  
+/* [1] The container */
+.img-hover-zoom {
+  float: left;
+  width: 860px;
+  height: 460px; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
 
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transform-origin: 65% 75%;
+  transition: transform 1s, filter 1.5s ease-out;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(2);
+}
 
 
 
@@ -144,4 +165,53 @@ textarea:focus {
 
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
+}
+
+
+
+/*slid show*/
+.mySlides{display: none;}
+img {vertical-align: middle;}
+
+.slideshow-container {
+    max-width: 50%;
+    position: relative;
+    margin: auto;
+}
+
+.numbertext {
+    color: rgb(221, 245, 3);
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.active {
+    background-color: rgba(13, 158, 0, 0.746);
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: false;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from{opacity: .4;}
+    to{opacity: 1;}
+}
+@keyframes fade {
+    from{opacity: .4;}
+    to{opacity: 1;}
+}
+@media only screen and (max-width: 300px) {
+    .text {font-size: 11px;}
+}
+
+.container {   
+    text-align: center;
+    padding-top: 0;
+    margin: auto;
+    width: 75%;
+    background-color: rgb(73, 123, 163);
 }

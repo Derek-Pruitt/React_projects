@@ -10,11 +10,18 @@
    
 </head>
 <body>
-    <h1 style="font-size: 3vw;">Hi there, this is responsive</h1>
+  <div><a href="#Hi">TOP</a>|
+    <a href="#moveImage">animated block</a>|
+    <a href="#subform">conatact form</a>|
+    <a href="#login">Login</a>|
+    <a href="#slid">slide show</a>|
+    <a href="#dragon">Zoom in image</a>
+  </div>
+    <h1 id="Hi" style="font-size: 3vw;">Hi there, this is responsive</h1>
     <div id="moveImage">
     </div>
-
-    <div class="container">
+    
+    <div id="subform" class="container">
         <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
         <div>
           
@@ -45,7 +52,7 @@
 
 
 
-      <button class="open-button" onclick="openForm()">Open Form</button>
+      <button id="login" class="open-button" onclick="openForm()">Open Form</button>
 
       <div class="form-popup" id="myForm">
         <form action="/action_page.php" class="form-container">
@@ -62,6 +69,64 @@
         </form>
       </div>
 
+      <!--auto slide show-->
+      <div id="slid" class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 8</div>
+          <img src="./images/downtherabithole.png" style="width:100%">
+          
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 8</div>
+          <img src="./images/Culture_Matrix_Code_corridor.png" style="width:100%">
+          
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 8</div>
+          <img src="./images/comscince.png" style="width:100%">
+         
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 8</div>
+            <img src="./images/bolt.png" style="width:100%">
+            
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 8</div>
+            <img src="./images/safe left safe right.png" style="width:100%">
+            
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 8</div>
+            <img src="./images/matrix-1735640_960_720.png" style="width:100%">
+            
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">7 / 8</div>
+            <img src="./images/greencode.png" style="width:100%">
+            
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">8 / 8</div>
+            <img src="./images/duke_code.png" style="width:100%">
+           
+          </div>
+
+
+        </div>
+        <br>
+        
+       
+
+
 
     <!--making the body fade in-->
     <script>
@@ -73,4 +138,9 @@
     </script>
     
 </body>
+<footer>
+  <div id="dragon" class="img-hover-zoom">
+  <img src="./images/dragon1.png" alt="This zooms-in really well and smooth">
+</div>
+</footer>
 </html>
