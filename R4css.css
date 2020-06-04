@@ -22,6 +22,7 @@ html {
     height: 600px;
     background-image: url(./images/dragon2.png);
 }
+
 input {
     padding: 10px 20px;
     margin: 15px;
@@ -50,6 +51,24 @@ textarea {
 textarea:focus {
     background-color: mediumaquamarine;
 }
+#moveImage {
+  width: 100px;
+  height: 100px;
+  background: rgba(217, 255, 0, 0.678);
+  position: relative;
+  animation: mymove 5s infinite;
+}
+@keyframes mymove {
+  0%   {top: 0px;}
+  25%  {top: 200px;}
+  75%  {top: 50px}
+  100% {top: 100px;}
+  0%   {left: 0px;}
+  25%  {left: 200px;}
+  75%  {left: 50px}
+  100% {left: 100px;}
+}
+ 
 
 
 
